@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* Canvas */
+#graph-canvas {
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: crosshair;
+    margin-bottom: 16px;
+}
+
+/* Calculate button */
+#calculate-button{
+    background: #0078d7;
+}
+
+#calculate-button:hover {
+    background: #005fa3;
+}
+
+#calculate-button:active {
+    background-color: blue;
+}
+
+/* Add node button */
+#add-node {
+    width: 2cm;
+    height: 2cm;    
+    background-color: green;
+}
+
+#add-node:hover {
+    background-color: #225522;
+}
+
+#add-node:active {
+    background-color: #333;
+}
+
+/* Remove mode button */
+#remove-mode {
+    width: 2cm;
+    height: 2cm;
+    background-color: red;
+}
+
+#remove-mode:hover {
+    background-color: #a33;
+}
+
+#remove-mode.clicked {
+    background: darkred;
+}
+
+/* Add edge button */
+#add-edge {
+    width: 2cm;
+    height: 2cm;
+    background-color: gray;
+}
+
+#add-edge:hover {
+    background: #333;
+}
+
+#add-edge.clicked {   
+   background: #1f1f1f;
+}
+
+/* Output area styling */
+#output {
+    max-width: 600px;
+    margin: 40px auto;
+    background: lightblue;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;            
+    max-height: 300px;           
+}
+
+/* Handling longer polynomials */
+#output .mjx-math {
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
