@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chromatic Polynomial Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chromatic Polynomial Calculator</h1>
+        <button id="add-node">+</button>
+        <button id="remove-mode">-</button>
+        <button id="add-edge">/</button>
+        <div id="graph-input-container">
+            <canvas id="graph-canvas" width="600" height="400"></canvas>
+            <button id="calculate-button">Calculate Chromatic Polynomial</button>
+        </div>
+        <div id="output" style="display: none;"></div>
+    </div>
+    <div class="container">
+        <h3>INSTRUCTIONS</h3>
+        Welcome to the chromatic polynomial calculator!
+        <ul>
+            <li>Click and hold a node to drag it around the canvas.</li>
+            <li>To add a node, click the green <b>'+'</b> button.</li>
+            <li>To add an edge between two nodes, click the gray <b>'/'</b> button
+                to toggle <i>edge mode</i>. Then click on the two nodes you wish to 
+                connect with an edge. To exit edge mode, click the gray <b>'/'</b> button again.</li>
+            <li>To remove a node or any edges, click the red <b>'-'</b> button 
+                to toggle <i>remove mode</i>. Then click on any nodes or edges you wish to
+                remove. To exit remove mode, click the red <b>'-'</b> button again.</li>
+        </ul>
+    </div>
+    <script type="module" src="app.js"></script>
+    <!-- MathJax for LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
